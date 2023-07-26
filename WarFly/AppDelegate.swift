@@ -2,7 +2,8 @@
 //  AppDelegate.swift
 //  WarFly
 //
-//  Created by Екатерина  on 24.07.23.
+//  Created by Katsiaryna Kulik  on 24.07.23.
+//  Copyright © 2023 Katsiaryna Kulik. All rights reserved.
 //
 
 import UIKit
