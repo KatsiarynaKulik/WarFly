@@ -12,7 +12,7 @@
 		C4BC21762A744299005708E9 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC21752A744299005708E9 /* Cloud.swift */; };
 		C4BC21782A7995A0005708E9 /* PlayerPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC21772A7995A0005708E9 /* PlayerPlane.swift */; };
 		C4BC217A2A79965C005708E9 /* PlayerPlane.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C4BC21792A79965C005708E9 /* PlayerPlane.atlas */; };
-		C4BC217C2A7C393F005708E9 /* GameBackgroundSpriteable + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC217B2A7C393F005708E9 /* GameBackgroundSpriteable + Extension.swift */; };
+		C4BC217C2A7C393F005708E9 /* protocol GameBackgroundSpriteable + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC217B2A7C393F005708E9 /* protocol GameBackgroundSpriteable + Extension.swift */; };
 		C4C603D22A6F02A9004BA2BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C603D12A6F02A9004BA2BF /* AppDelegate.swift */; };
 		C4C603D82A6F02A9004BA2BF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C603D72A6F02A9004BA2BF /* GameScene.swift */; };
 		C4C603DA2A6F02A9004BA2BF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C603D92A6F02A9004BA2BF /* GameViewController.swift */; };
@@ -27,7 +27,7 @@
 		C4BC21752A744299005708E9 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		C4BC21772A7995A0005708E9 /* PlayerPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPlane.swift; sourceTree = "<group>"; };
 		C4BC21792A79965C005708E9 /* PlayerPlane.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = PlayerPlane.atlas; path = "04. images/PlayerPlane.atlas"; sourceTree = SOURCE_ROOT; };
-		C4BC217B2A7C393F005708E9 /* GameBackgroundSpriteable + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameBackgroundSpriteable + Extension.swift"; sourceTree = "<group>"; };
+		C4BC217B2A7C393F005708E9 /* protocol GameBackgroundSpriteable + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "protocol GameBackgroundSpriteable + Extension.swift"; sourceTree = "<group>"; };
 		C4C603CE2A6F02A9004BA2BF /* WarFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C603D12A6F02A9004BA2BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4C603D72A6F02A9004BA2BF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 				C4BC21732A728BDD005708E9 /* Island.swift */,
 				C4BC21772A7995A0005708E9 /* PlayerPlane.swift */,
 				C4BC21752A744299005708E9 /* Cloud.swift */,
-				C4BC217B2A7C393F005708E9 /* GameBackgroundSpriteable + Extension.swift */,
+				C4BC217B2A7C393F005708E9 /* protocol GameBackgroundSpriteable + Extension.swift */,
 				C4BC21712A7160CD005708E9 /* Background.swift */,
 				C4C603D92A6F02A9004BA2BF /* GameViewController.swift */,
 				C4C603DB2A6F02A9004BA2BF /* Main.storyboard */,
@@ -158,7 +158,7 @@
 			files = (
 				C4C603D82A6F02A9004BA2BF /* GameScene.swift in Sources */,
 				C4BC21782A7995A0005708E9 /* PlayerPlane.swift in Sources */,
-				C4BC217C2A7C393F005708E9 /* GameBackgroundSpriteable + Extension.swift in Sources */,
+				C4BC217C2A7C393F005708E9 /* protocol GameBackgroundSpriteable + Extension.swift in Sources */,
 				C4BC21762A744299005708E9 /* Cloud.swift in Sources */,
 				C4C603DA2A6F02A9004BA2BF /* GameViewController.swift in Sources */,
 				C4C603D22A6F02A9004BA2BF /* AppDelegate.swift in Sources */,
