@@ -9,6 +9,7 @@
 import SpriteKit
 import GameplayKit
 
+
 class GameScene: SKScene {
 
     var player: PlayerPlane!
@@ -18,12 +19,23 @@ class GameScene: SKScene {
         configureStartScene()
         spawnClouds()
         spawnIslands()
-      player.performFly()
+        let deadline = DispatchTime.now() + .nanoseconds(1)
+        DispatchQueue.main.asyncAfter(deadline: deadline) { [unowned self] in
+            self.player.performFly()
+        }
 
-      let powerUp = PowerUp()
-      powerUp.performRotation()
-      powerUp.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
-      self.addChild(powerUp)
+        let powerUp = PowerUp()
+        powerUp.performRotation()
+        powerUp.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
+        self.addChild(powerUp)
+
+        let enemyTextureAtlas = SKTextureAtlas(named: "Enemy_1")
+        SKTextureAtlas.preloadTextureAtlases([enemyTextureAtlas]) {
+            Enemy.textureAtlas = enemyTextureAtlas
+            let enemy = Enemy()
+            enemy.position = CGPoint(x: self.size.width / 2, y: self.size.height * 2 / 3)
+            self.addChild(enemy)
+        }
     }
 
     fileprivate func spawnClouds() {
@@ -67,21 +79,21 @@ class GameScene: SKScene {
         player = PlayerPlane.populate(at: CGPoint(x: screen.size.width / 2, y: 100))
         self.addChild(player)
 
+
     }
 
     override func didSimulatePhysics() {
 
-      player.checkPosition()
 
-      enumerateChildNodes(withName: "backgroundSprite") { (node, stop) in
-        if node.position.y < -199 {
-          node.removeFromParent()
+        player.checkPosition()
+
+        enumerateChildNodes(withName: "backgroundSprite") { (node, stop) in
+            if node.position.y < -199 {
+                node.removeFromParent()
+            }
         }
-      }
     }
 }
-
-
 
 
 
