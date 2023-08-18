@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C4877F002A8A5A9D001E1B3F /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4877EFF2A8A5A9D001E1B3F /* PowerUp.swift */; };
 		C4877F022A8A5B30001E1B3F /* GreenPowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C4877F012A8A5B2F001E1B3F /* GreenPowerUp.atlas */; };
+		C4A8B5292A8FFEB600B5DDD4 /* Enemy_2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C4A8B5282A8FFEB500B5DDD4 /* Enemy_2.atlas */; };
 		C4BC21722A7160CD005708E9 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC21712A7160CD005708E9 /* Background.swift */; };
 		C4BC21742A728BDD005708E9 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC21732A728BDD005708E9 /* Island.swift */; };
 		C4BC21762A744299005708E9 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC21752A744299005708E9 /* Cloud.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		C4877EFF2A8A5A9D001E1B3F /* PowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUp.swift; sourceTree = "<group>"; };
 		C4877F012A8A5B2F001E1B3F /* GreenPowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GreenPowerUp.atlas; sourceTree = "<group>"; };
+		C4A8B5282A8FFEB500B5DDD4 /* Enemy_2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_2.atlas; sourceTree = "<group>"; };
 		C4BC21712A7160CD005708E9 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		C4BC21732A728BDD005708E9 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 		C4BC21752A744299005708E9 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				C4C603D92A6F02A9004BA2BF /* GameViewController.swift */,
 				C4C603DB2A6F02A9004BA2BF /* Main.storyboard */,
 				C4C603DE2A6F02AB004BA2BF /* Assets.xcassets */,
+				C4A8B5282A8FFEB500B5DDD4 /* Enemy_2.atlas */,
 				C4DE7FAA2A8D45FA0062BCD8 /* Enemy_1.atlas */,
 				C4877F012A8A5B2F001E1B3F /* GreenPowerUp.atlas */,
 				C4BC21792A79965C005708E9 /* PlayerPlane.atlas */,
@@ -154,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4A8B5292A8FFEB600B5DDD4 /* Enemy_2.atlas in Resources */,
 				C4DE7FAB2A8D45FA0062BCD8 /* Enemy_1.atlas in Resources */,
 				C4C603DD2A6F02A9004BA2BF /* Main.storyboard in Resources */,
 				C4877F022A8A5B30001E1B3F /* GreenPowerUp.atlas in Resources */,
