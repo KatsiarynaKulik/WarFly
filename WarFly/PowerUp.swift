@@ -14,15 +14,15 @@ class PowerUp: SKSpriteNode {
     fileprivate var textureNameBeingsWith = ""
     fileprivate var animationSpriteArray = [SKTexture]()
 
-    init(textureAtlas: SKTextureAtlas) {
-        self.textureAtlas = textureAtlas
-        let textureName = textureAtlas.textureNames.sorted()[0]
-        let texture = textureAtlas.textureNamed(textureName)
-        textureNameBeingsWith = String(textureName.characters.dropLast(6))
-        super.init(texture: texture, color: .clear, size: initialSize)
-        self.setScale(0.7)
-        self.name = "sprite"
-        self.zPosition = 20
+  init(textureAtlas: SKTextureAtlas) {
+      self.textureAtlas = textureAtlas
+      let textureName = textureAtlas.textureNames.sorted()[0]
+      let texture = textureAtlas.textureNamed(textureName)
+    textureNameBeingsWith = String(textureName.dropLast(6))
+      super.init(texture: texture, color: .clear, size: initialSize)
+      self.setScale(0.7)
+      self.name = "sprite"
+      self.zPosition = 20
     }
 
     func startMovement() {
