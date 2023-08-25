@@ -57,11 +57,10 @@ class GameScene: SKScene {
         self.run(SKAction.repeatForever(SKAction.sequence([waitAction, spawnSpiralAction])))
     }
 
-
-    fileprivate func spawnSpiralOfEnemies() {
-        let enemyTextureAtlas1 = SKTextureAtlas(named: "Enemy_1")
-        let enemyTextureAtlas2 = SKTextureAtlas(named: "Enemy_2")
-        SKTextureAtlas.preloadTextureAtlases([enemyTextureAtlas1, enemyTextureAtlas2]) { [unowned self] in
+  fileprivate func spawnSpiralOfEnemies() {
+      let enemyTextureAtlas1 = Assets.shared.enemy_1Atlas//SKTextureAtlas(named: "Enemy_1")
+      let enemyTextureAtlas2 = Assets.shared.enemy_2Atlas//SKTextureAtlas(named: "Enemy_2")
+      SKTextureAtlas.preloadTextureAtlases([enemyTextureAtlas1, enemyTextureAtlas2]) { [unowned self] in
 
             let randomNumber = Int(arc4random_uniform(2))
             let arrayOfAtlases = [enemyTextureAtlas1, enemyTextureAtlas2]
