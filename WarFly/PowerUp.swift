@@ -23,6 +23,12 @@ class PowerUp: SKSpriteNode {
         self.setScale(0.7)
         self.name = "sprite"
         self.zPosition = 20
+
+      self.physicsBody = SKPhysicsBody(texture: texture, alphaThreshold: 0.5, size: self.size)
+      self.physicsBody?.isDynamic = true
+      self.physicsBody?.categoryBitMask = BitMaskCategory.powerUp
+      self.physicsBody?.collisionBitMask = BitMaskCategory.player
+      self.physicsBody?.contactTestBitMask = BitMaskCategory.player
     }
 
     func startMovement() {
