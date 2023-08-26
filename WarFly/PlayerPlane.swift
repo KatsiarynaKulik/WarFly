@@ -21,22 +21,23 @@ class PlayerPlane: SKSpriteNode {
     var stillTurning = false
     let animationSpriteStrides = [(13, 1, -1), (13, 26, 1), (13, 13, 1)]
 
-  static func populate(at point: CGPoint) -> PlayerPlane {
-    let atlas = Assets.shared.playerPlaneAtlas
-    let playerPlaneTexture = atlas.textureNamed("airplane_3ver2_13")
-    let playerPlane = PlayerPlane(texture: playerPlaneTexture)
-    playerPlane.setScale(0.5)
-    playerPlane.position = point
-    playerPlane.zPosition = 40
+    static func populate(at point: CGPoint) -> PlayerPlane {
+        let atlas = Assets.shared.playerPlaneAtlas
+        let playerPlaneTexture = atlas.textureNamed("airplane_3ver2_13")
+        let playerPlane = PlayerPlane(texture: playerPlaneTexture)
+        playerPlane.setScale(0.5)
+        playerPlane.position = point
+        playerPlane.zPosition = 40
 
-    playerPlane.physicsBody = SKPhysicsBody(texture: playerPlaneTexture, alphaThreshold: 0.5, size: playerPlane.size)
-    playerPlane.physicsBody?.isDynamic = false
-    playerPlane.physicsBody?.categoryBitMask = BitMaskCategory.player
-    playerPlane.physicsBody?.collisionBitMask = BitMaskCategory.enemy | BitMaskCategory.powerUp
-    playerPlane.physicsBody?.contactTestBitMask = BitMaskCategory.enemy | BitMaskCategory.powerUp
 
-      return playerPlane
-  }
+        playerPlane.physicsBody = SKPhysicsBody(texture: playerPlaneTexture, alphaThreshold: 0.5, size: playerPlane.size)
+        playerPlane.physicsBody?.isDynamic = false
+        playerPlane.physicsBody?.categoryBitMask = BitMaskCategory.player.rawValue
+        playerPlane.physicsBody?.collisionBitMask = BitMaskCategory.enemy.rawValue | BitMaskCategory.powerUp.rawValue
+        playerPlane.physicsBody?.contactTestBitMask = BitMaskCategory.enemy.rawValue | BitMaskCategory.powerUp.rawValue
+
+        return playerPlane
+    }
 
     func checkPosition() {
         self.position.x += xAcceleration * 50

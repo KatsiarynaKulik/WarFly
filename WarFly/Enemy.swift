@@ -13,20 +13,20 @@ class Enemy: SKSpriteNode {
     static var textureAtlas: SKTextureAtlas?
     var enemyTexture: SKTexture!
 
-    init(enemyTexture: SKTexture) {
-        let texture = enemyTexture
-        super.init(texture: texture, color: .clear, size: CGSize(width: 221, height: 204))
-        self.xScale = 0.5
-        self.yScale = -0.5
-        self.zPosition = 20
-        self.name = "sprite"
-
-      self.physicsBody = SKPhysicsBody(texture: texture, alphaThreshold: 0.5, size: self.size)
-      self.physicsBody?.isDynamic = true
-      self.physicsBody?.categoryBitMask = BitMaskCategory.enemy
-      self.physicsBody?.collisionBitMask = BitMaskCategory.player | BitMaskCategory.shot
-      self.physicsBody?.contactTestBitMask = BitMaskCategory.player | BitMaskCategory.shot
-    }
+  init(enemyTexture: SKTexture) {
+    let texture = enemyTexture
+    super.init(texture: texture, color: .clear, size: CGSize(width: 221, height: 204))
+    self.xScale = 0.5
+    self.yScale = -0.5
+    self.zPosition = 20
+    self.name = "sprite"
+    
+    self.physicsBody = SKPhysicsBody(texture: texture, alphaThreshold: 0.5, size: self.size)
+    self.physicsBody?.isDynamic = true
+    self.physicsBody?.categoryBitMask = BitMaskCategory.enemy.rawValue
+    self.physicsBody?.collisionBitMask = BitMaskCategory.player.rawValue | BitMaskCategory.shot.rawValue
+    self.physicsBody?.contactTestBitMask = BitMaskCategory.player.rawValue | BitMaskCategory.shot.rawValue
+  }
 
     func flySpiral() {
 
