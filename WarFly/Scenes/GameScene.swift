@@ -12,9 +12,10 @@ import GameplayKit
 
 class GameScene: SKScene {
 
-   fileprivate var player: PlayerPlane!
-  fileprivate let hud = HUD()
-  fileprivate let screenSice = UIScreen.main.bounds.size
+    fileprivate var player: PlayerPlane!
+    fileprivate let hud = HUD()
+    fileprivate let screenSize = UIScreen.main.bounds.size
+
 
     override func didMove(to view: SKView) {
 
@@ -24,21 +25,19 @@ class GameScene: SKScene {
         configureStartScene()
         spawnClouds()
         spawnIslands()
-            self.player.performFly()
+        self.player.performFly()
 
         spawnPowerUp()
         spawnEnemies()
-      createHUD()
+        createHUD()
     }
 
-  fileprivate func createHUD() {
-    addChild(hud)
-    hud.configureUI(screenSice: screenSice)
-  }
+    fileprivate func createHUD() {
+        addChild(hud)
+      hud.configureUI(screenSize: screenSize)
+    }
 
-
-
-  fileprivate func spawnPowerUp() {
+    fileprivate func spawnPowerUp() {
 
         let spawnAction = SKAction.run {
             let randomNumber = Int(arc4random_uniform(2))
@@ -56,7 +55,6 @@ class GameScene: SKScene {
         self.run(SKAction.repeatForever(SKAction.sequence([spawnAction, waitAction])))
     }
 
-
     fileprivate func spawnEnemies() {
         let waitAction = SKAction.wait(forDuration: 3.0)
         let spawnSpiralAction = SKAction.run { [unowned self] in
@@ -65,7 +63,6 @@ class GameScene: SKScene {
 
         self.run(SKAction.repeatForever(SKAction.sequence([waitAction, spawnSpiralAction])))
     }
-
 
     fileprivate func spawnSpiralOfEnemies() {
         let enemyTextureAtlas1 = Assets.shared.enemy_1Atlas//SKTextureAtlas(named: "Enemy_1")
@@ -159,10 +156,19 @@ class GameScene: SKScene {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        playerFire()
+        let location = touches.first!.location(in: self)
+        let node = self.atPoint(location)
+
+        if node.name == "pause" {
+            let transition = SKTransition.doorway(withDuration: 1.0)
+            let pauseScene = PauseScene(size: self.size)
+            pauseScene.scaleMode = .aspectFill
+            self.scene!.view?.presentScene(pauseScene, transition: transition)
+        } else {
+            playerFire()
+        }
     }
 }
-
 
 
 extension GameScene: SKPhysicsContactDelegate {
@@ -182,17 +188,6 @@ extension GameScene: SKPhysicsContactDelegate {
 
     }
 }
-
-
-
-
-
-
-
-
- 
-
-
 
 
 

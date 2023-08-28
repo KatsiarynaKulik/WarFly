@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C423F6452A9A8B6D0058E0C2 /* BitMaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423F6442A9A8B6D0058E0C2 /* BitMaskCategory.swift */; };
 		C42980E82A9C040900EA6F61 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42980E72A9C040900EA6F61 /* HUD.swift */; };
+		C44811702A9D53D3003F655A /* PauseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C448116F2A9D53D3003F655A /* PauseScene.swift */; };
 		C4877F002A8A5A9D001E1B3F /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4877EFF2A8A5A9D001E1B3F /* PowerUp.swift */; };
 		C4A8B5292A8FFEB600B5DDD4 /* Enemy_2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C4A8B5282A8FFEB500B5DDD4 /* Enemy_2.atlas */; };
 		C4A8B52B2A93F5CD00B5DDD4 /* BluePowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C4A8B52A2A93F5CD00B5DDD4 /* BluePowerUp.atlas */; };
@@ -26,6 +27,7 @@
 		C4BC21782A7995A0005708E9 /* PlayerPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC21772A7995A0005708E9 /* PlayerPlane.swift */; };
 		C4BC217A2A79965C005708E9 /* PlayerPlane.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C4BC21792A79965C005708E9 /* PlayerPlane.atlas */; };
 		C4BC217C2A7C393F005708E9 /* protocol GameBackgroundSpriteable + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC217B2A7C393F005708E9 /* protocol GameBackgroundSpriteable + Extension.swift */; };
+		C4BCC05E2A9D4E52001A3B50 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BCC05D2A9D4E52001A3B50 /* ButtonNode.swift */; };
 		C4C603D22A6F02A9004BA2BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C603D12A6F02A9004BA2BF /* AppDelegate.swift */; };
 		C4C603DA2A6F02A9004BA2BF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C603D92A6F02A9004BA2BF /* GameViewController.swift */; };
 		C4C603DD2A6F02A9004BA2BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C603DB2A6F02A9004BA2BF /* Main.storyboard */; };
@@ -38,6 +40,7 @@
 /* Begin PBXFileReference section */
 		C423F6442A9A8B6D0058E0C2 /* BitMaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMaskCategory.swift; sourceTree = "<group>"; };
 		C42980E72A9C040900EA6F61 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		C448116F2A9D53D3003F655A /* PauseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseScene.swift; sourceTree = "<group>"; };
 		C4877EFF2A8A5A9D001E1B3F /* PowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUp.swift; sourceTree = "<group>"; };
 		C4A8B5282A8FFEB500B5DDD4 /* Enemy_2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_2.atlas; sourceTree = "<group>"; };
 		C4A8B52A2A93F5CD00B5DDD4 /* BluePowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BluePowerUp.atlas; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		C4BC21772A7995A0005708E9 /* PlayerPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPlane.swift; sourceTree = "<group>"; };
 		C4BC21792A79965C005708E9 /* PlayerPlane.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = PlayerPlane.atlas; path = WarFly/Atlases/PlayerPlane.atlas; sourceTree = SOURCE_ROOT; };
 		C4BC217B2A7C393F005708E9 /* protocol GameBackgroundSpriteable + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "protocol GameBackgroundSpriteable + Extension.swift"; sourceTree = "<group>"; };
+		C4BCC05D2A9D4E52001A3B50 /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
 		C4C603CE2A6F02A9004BA2BF /* WarFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C603D12A6F02A9004BA2BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4C603D92A6F02A9004BA2BF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 		C42980EC2A9C063F00EA6F61 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C4BCC05D2A9D4E52001A3B50 /* ButtonNode.swift */,
 				C42980E72A9C040900EA6F61 /* HUD.swift */,
 				C4A8B5352A96714700B5DDD4 /* Shot.swift */,
 				C4BC21712A7160CD005708E9 /* Background.swift */,
@@ -131,13 +136,14 @@
 			name = Managers;
 			sourceTree = "<group>";
 		};
-		C42980EE2A9C06CF00EA6F61 /* Scens */ = {
+		C42980EE2A9C06CF00EA6F61 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				C4A8B5392A97EAF600B5DDD4 /* GameScene.swift */,
 				C4A8B5402A98F89400B5DDD4 /* MenuScene.swift */,
+				C448116F2A9D53D3003F655A /* PauseScene.swift */,
+				C4A8B5392A97EAF600B5DDD4 /* GameScene.swift */,
 			);
-			path = Scens;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		C4A8B5342A96708800B5DDD4 /* Atlases */ = {
@@ -172,7 +178,7 @@
 		C4C603D02A6F02A9004BA2BF /* WarFly */ = {
 			isa = PBXGroup;
 			children = (
-				C42980EE2A9C06CF00EA6F61 /* Scens */,
+				C42980EE2A9C06CF00EA6F61 /* Scenes */,
 				C42980ED2A9C06AA00EA6F61 /* Managers */,
 				C42980EC2A9C063F00EA6F61 /* Classes */,
 				C42980EB2A9C060600EA6F61 /* Protocols + Exrensions */,
@@ -275,9 +281,11 @@
 				C4A8B5362A96714700B5DDD4 /* Shot.swift in Sources */,
 				C423F6452A9A8B6D0058E0C2 /* BitMaskCategory.swift in Sources */,
 				C4A8B5412A98F89400B5DDD4 /* MenuScene.swift in Sources */,
+				C44811702A9D53D3003F655A /* PauseScene.swift in Sources */,
 				C42980E82A9C040900EA6F61 /* HUD.swift in Sources */,
 				C4A8B53A2A97EAF600B5DDD4 /* GameScene.swift in Sources */,
 				C4BC21722A7160CD005708E9 /* Background.swift in Sources */,
+				C4BCC05E2A9D4E52001A3B50 /* ButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
