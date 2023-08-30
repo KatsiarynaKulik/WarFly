@@ -19,7 +19,8 @@ class GameScene: SKScene {
     fileprivate let screenSize = UIScreen.main.bounds.size
 
 
-    override func didMove(to view: SKView) {
+  override func didMove(to view: SKView) {
+      self.scene?.isPaused = false
 
       // checking if scene persists
 
@@ -163,21 +164,22 @@ class GameScene: SKScene {
         self.addChild(shot)
     }
 
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let location = touches.first!.location(in: self)
-        let node = self.atPoint(location)
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+      let location = touches.first!.location(in: self)
+      let node = self.atPoint(location)
 
-        if node.name == "pause" {
-            let transition = SKTransition.doorway(withDuration: 1.0)
-            let pauseScene = PauseScene(size: self.size)
-            pauseScene.scaleMode = .aspectFill
-            self.scene!.view?.presentScene(pauseScene, transition: transition)
-        } else {
-            playerFire()
-        }
-    }
+      if node.name == "pause" {
+          let transition = SKTransition.doorway(withDuration: 1.0)
+          let pauseScene = PauseScene(size: self.size)
+          pauseScene.scaleMode = .aspectFill
+          sceneManager.gameScene = self
+          self.scene?.isPaused = true
+          self.scene!.view?.presentScene(pauseScene, transition: transition)
+      } else {
+          playerFire()
+      }
+  }
 }
-
 
 extension GameScene: SKPhysicsContactDelegate {
 
