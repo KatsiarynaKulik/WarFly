@@ -26,11 +26,11 @@ class Shot: SKSpriteNode {
         self.name = "shotSprite"
         self.zPosition = 30
 
-      self.physicsBody = SKPhysicsBody(texture: texture, alphaThreshold: 0.5, size: self.size)
-      self.physicsBody?.isDynamic = false
-      self.physicsBody?.categoryBitMask = BitMaskCategory.shot.rawValue
-      self.physicsBody?.collisionBitMask = BitMaskCategory.enemy.rawValue
-      self.physicsBody?.contactTestBitMask = BitMaskCategory.enemy.rawValue
+        self.physicsBody = SKPhysicsBody(texture: texture, alphaThreshold: 0.5, size: self.size)
+        self.physicsBody?.isDynamic = false
+        self.physicsBody?.categoryBitMask = BitMaskCategory.shot.rawValue
+        self.physicsBody?.collisionBitMask = BitMaskCategory.enemy.rawValue
+        self.physicsBody?.contactTestBitMask = BitMaskCategory.enemy.rawValue
     }
 
     func startMovement() {
