@@ -15,6 +15,8 @@
 		C44811782AA0024C003F655A /* ParentScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44811772AA0024C003F655A /* ParentScene.swift */; };
 		C448117A2AA116EB003F655A /* OptionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44811792AA116EB003F655A /* OptionsScene.swift */; };
 		C448117C2AA118C4003F655A /* BestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C448117B2AA118C4003F655A /* BestScene.swift */; };
+		C448117F2AA29C8A003F655A /* EnemyExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = C448117D2AA29C8A003F655A /* EnemyExplosion.sks */; };
+		C44811802AA29C8A003F655A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C448117E2AA29C8A003F655A /* Assets.xcassets */; };
 		C4877F002A8A5A9D001E1B3F /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4877EFF2A8A5A9D001E1B3F /* PowerUp.swift */; };
 		C4A8B5292A8FFEB600B5DDD4 /* Enemy_2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C4A8B5282A8FFEB500B5DDD4 /* Enemy_2.atlas */; };
 		C4A8B52B2A93F5CD00B5DDD4 /* BluePowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C4A8B52A2A93F5CD00B5DDD4 /* BluePowerUp.atlas */; };
@@ -51,6 +53,8 @@
 		C44811772AA0024C003F655A /* ParentScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentScene.swift; sourceTree = "<group>"; };
 		C44811792AA116EB003F655A /* OptionsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScene.swift; sourceTree = "<group>"; };
 		C448117B2AA118C4003F655A /* BestScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestScene.swift; sourceTree = "<group>"; };
+		C448117D2AA29C8A003F655A /* EnemyExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EnemyExplosion.sks; sourceTree = "<group>"; };
+		C448117E2AA29C8A003F655A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4877EFF2A8A5A9D001E1B3F /* PowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUp.swift; sourceTree = "<group>"; };
 		C4A8B5282A8FFEB500B5DDD4 /* Enemy_2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_2.atlas; sourceTree = "<group>"; };
 		C4A8B52A2A93F5CD00B5DDD4 /* BluePowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BluePowerUp.atlas; sourceTree = "<group>"; };
@@ -155,8 +159,17 @@
 				C44811792AA116EB003F655A /* OptionsScene.swift */,
 				C44811772AA0024C003F655A /* ParentScene.swift */,
 				C4A8B5392A97EAF600B5DDD4 /* GameScene.swift */,
+				C448117E2AA29C8A003F655A /* Assets.xcassets */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C44811812AA29C9D003F655A /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				C448117D2AA29C8A003F655A /* EnemyExplosion.sks */,
+			);
+			path = Particles;
 			sourceTree = "<group>";
 		};
 		C4A8B5342A96708800B5DDD4 /* Atlases */ = {
@@ -191,6 +204,7 @@
 		C4C603D02A6F02A9004BA2BF /* WarFly */ = {
 			isa = PBXGroup;
 			children = (
+				C44811812AA29C9D003F655A /* Particles */,
 				C42980EE2A9C06CF00EA6F61 /* Scenes */,
 				C42980ED2A9C06AA00EA6F61 /* Managers */,
 				C42980EC2A9C063F00EA6F61 /* Classes */,
@@ -263,10 +277,12 @@
 			files = (
 				C4A8B52D2A93F66C00B5DDD4 /* GreenPowerUp.atlas in Resources */,
 				C44811742A9FD607003F655A /* YellowShot.atlas in Resources */,
+				C44811802AA29C8A003F655A /* Assets.xcassets in Resources */,
 				C4A8B5292A8FFEB600B5DDD4 /* Enemy_2.atlas in Resources */,
 				C4DE7FAB2A8D45FA0062BCD8 /* Enemy_1.atlas in Resources */,
 				C4C603DD2A6F02A9004BA2BF /* Main.storyboard in Resources */,
 				C4BC217A2A79965C005708E9 /* PlayerPlane.atlas in Resources */,
+				C448117F2AA29C8A003F655A /* EnemyExplosion.sks in Resources */,
 				C4C603DF2A6F02AB004BA2BF /* Assets.xcassets in Resources */,
 				C4A8B52B2A93F5CD00B5DDD4 /* BluePowerUp.atlas in Resources */,
 				C4C603E22A6F02AB004BA2BF /* LaunchScreen.storyboard in Resources */,
