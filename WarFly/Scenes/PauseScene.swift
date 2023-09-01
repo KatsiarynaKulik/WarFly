@@ -11,7 +11,6 @@ import SpriteKit
 class PauseScene: ParentScene {
 
     override func didMove(to view: SKView) {
-        self.backgroundColor = SKColor(red: 0.15, green: 0.15, blue: 0.3, alpha: 1.0)
 
         setHeader(withName: "pause", andBackground: "header_background")
 

@@ -14,6 +14,7 @@
 		C44811742A9FD607003F655A /* YellowShot.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C44811732A9FD607003F655A /* YellowShot.atlas */; };
 		C44811782AA0024C003F655A /* ParentScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44811772AA0024C003F655A /* ParentScene.swift */; };
 		C448117A2AA116EB003F655A /* OptionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44811792AA116EB003F655A /* OptionsScene.swift */; };
+		C448117C2AA118C4003F655A /* BestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C448117B2AA118C4003F655A /* BestScene.swift */; };
 		C4877F002A8A5A9D001E1B3F /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4877EFF2A8A5A9D001E1B3F /* PowerUp.swift */; };
 		C4A8B5292A8FFEB600B5DDD4 /* Enemy_2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C4A8B5282A8FFEB500B5DDD4 /* Enemy_2.atlas */; };
 		C4A8B52B2A93F5CD00B5DDD4 /* BluePowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C4A8B52A2A93F5CD00B5DDD4 /* BluePowerUp.atlas */; };
@@ -49,6 +50,7 @@
 		C44811732A9FD607003F655A /* YellowShot.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = YellowShot.atlas; sourceTree = "<group>"; };
 		C44811772AA0024C003F655A /* ParentScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentScene.swift; sourceTree = "<group>"; };
 		C44811792AA116EB003F655A /* OptionsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScene.swift; sourceTree = "<group>"; };
+		C448117B2AA118C4003F655A /* BestScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestScene.swift; sourceTree = "<group>"; };
 		C4877EFF2A8A5A9D001E1B3F /* PowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUp.swift; sourceTree = "<group>"; };
 		C4A8B5282A8FFEB500B5DDD4 /* Enemy_2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_2.atlas; sourceTree = "<group>"; };
 		C4A8B52A2A93F5CD00B5DDD4 /* BluePowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BluePowerUp.atlas; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				C4A8B5402A98F89400B5DDD4 /* MenuScene.swift */,
 				C448116F2A9D53D3003F655A /* PauseScene.swift */,
+				C448117B2AA118C4003F655A /* BestScene.swift */,
 				C44811792AA116EB003F655A /* OptionsScene.swift */,
 				C44811772AA0024C003F655A /* ParentScene.swift */,
 				C4A8B5392A97EAF600B5DDD4 /* GameScene.swift */,
@@ -291,6 +294,7 @@
 				C4877F002A8A5A9D001E1B3F /* PowerUp.swift in Sources */,
 				C4A8B5312A93F71100B5DDD4 /* BluePowerUp.swift in Sources */,
 				C4A8B5362A96714700B5DDD4 /* Shot.swift in Sources */,
+				C448117C2AA118C4003F655A /* BestScene.swift in Sources */,
 				C423F6452A9A8B6D0058E0C2 /* BitMaskCategory.swift in Sources */,
 				C4A8B5412A98F89400B5DDD4 /* MenuScene.swift in Sources */,
 				C44811782AA0024C003F655A /* ParentScene.swift in Sources */,

@@ -12,8 +12,6 @@ class OptionsScene: ParentScene {
 
     override func didMove(to view: SKView) {
 
-        self.backgroundColor = SKColor(red: 0.15, green: 0.15, blue: 0.3, alpha: 1.0)
-
         setHeader(withName: "options", andBackground: "header_background")
 
 
