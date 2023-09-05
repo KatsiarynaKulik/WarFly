@@ -166,6 +166,19 @@ class GameScene: ParentScene {
             }
         }
 
+        enumerateChildNodes(withName: "bluePowerUp") { (node, stop) in
+            if node.position.y <= -100 {
+                node.removeFromParent()
+            }
+        }
+
+        enumerateChildNodes(withName: "greenPowerUp") { (node, stop) in
+            if node.position.y <= -100 {
+                node.removeFromParent()
+            }
+        }
+
+
         enumerateChildNodes(withName: "shotSprite") { (node, stop) in
             if node.position.y >= self.size.height + 100 {
                 node.removeFromParent()
@@ -231,18 +244,43 @@ extension GameScene: SKPhysicsContactDelegate {
             gameOverScene.scaleMode = .aspectFill
             let transition = SKTransition.doorsCloseVertical(withDuration: 1.0)
             self.scene!.view?.presentScene(gameOverScene, transition: transition)
-        }
+            }
 
         case [.powerUp, .player]: print("powerUp vs player")
-        case [.enemy, .shot]: print("enemy vs shot")
-        hud.score += 5
 
-        contact.bodyA.node?.removeFromParent()
-        contact.bodyB.node?.removeFromParent()
-        addChild(explosion!)
-        self.run(waitForExplosionAction){ explosion?.removeFromParent() }
+        if contact.bodyA.node?.parent != nil && contact.bodyB.node?.parent != nil {
+
+            if contact.bodyA.node?.name == "bluePowerUp" {
+                contact.bodyA.node?.removeFromParent()
+                lives = 3
+                player.bluePowerUp()
+            } else if contact.bodyB.node?.name == "bluePowerUp" {
+                contact.bodyB.node?.removeFromParent()
+                lives = 3
+                player.bluePowerUp()
+            }
+
+            if contact.bodyA.node?.name == "greenPowerUp" {
+                contact.bodyA.node?.removeFromParent()
+                player.greenPowerUp()
+            } else {
+                contact.bodyB.node?.removeFromParent()
+                player.greenPowerUp()
+            }
+        }
+
+        case [.enemy, .shot]: print("enemy vs shot")
+
+        if contact.bodyA.node?.parent != nil {
+            contact.bodyA.node?.removeFromParent()
+            contact.bodyB.node?.removeFromParent()
+            hud.score += 5
+            addChild(explosion!)
+            self.run(waitForExplosionAction){ explosion?.removeFromParent() }
+        }
 
         default: preconditionFailure("Unable to detect collision category")
+
         }
     }
 
