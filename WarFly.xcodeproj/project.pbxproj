@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41E24362AAE4C8200671831 /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E24352AAE4C8200671831 /* GameSettings.swift */; };
 		C423F6452A9A8B6D0058E0C2 /* BitMaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423F6442A9A8B6D0058E0C2 /* BitMaskCategory.swift */; };
 		C42980E82A9C040900EA6F61 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42980E72A9C040900EA6F61 /* HUD.swift */; };
 		C44811702A9D53D3003F655A /* PauseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C448116F2A9D53D3003F655A /* PauseScene.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C41E24352AAE4C8200671831 /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
 		C423F6442A9A8B6D0058E0C2 /* BitMaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMaskCategory.swift; sourceTree = "<group>"; };
 		C42980E72A9C040900EA6F61 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		C448116F2A9D53D3003F655A /* PauseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseScene.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				C448117B2AA118C4003F655A /* BestScene.swift */,
 				C44811792AA116EB003F655A /* OptionsScene.swift */,
 				C44811772AA0024C003F655A /* ParentScene.swift */,
+				C41E24352AAE4C8200671831 /* GameSettings.swift */,
 				C4A8B5392A97EAF600B5DDD4 /* GameScene.swift */,
 				C471617D2AA64975000795EE /* GameOverScene.swift */,
 				C448117E2AA29C8A003F655A /* Assets.xcassets */,
@@ -309,6 +312,7 @@
 			files = (
 				C4BC21782A7995A0005708E9 /* PlayerPlane.swift in Sources */,
 				C4BC217C2A7C393F005708E9 /* protocol GameBackgroundSpriteable + Extension.swift in Sources */,
+				C41E24362AAE4C8200671831 /* GameSettings.swift in Sources */,
 				C4BC21762A744299005708E9 /* Cloud.swift in Sources */,
 				C4A8B52F2A93F70500B5DDD4 /* GreenPowerUp.swift in Sources */,
 				C4C603DA2A6F02A9004BA2BF /* GameViewController.swift in Sources */,
