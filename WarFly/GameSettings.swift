@@ -31,11 +31,17 @@ class GameSettings: NSObject {
     }
 
   func saveScores() {
-    
+    highscore.append(currentScore)
+    highscore = Array(highscore.sorted { $0 > $1 }.prefix(3))
+
+    ud.set(highscore, forKey: highscoreKey)
+    ud.synchronize()
 
   }
 
   func loadScores() {
+    guard ud.value(forKey: highscoreKey) != nil else { return }
+    highscore = ud.array(forKey: highscoreKey) as! [Int]
 
   }
 
