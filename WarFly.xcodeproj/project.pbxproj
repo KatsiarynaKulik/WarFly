@@ -155,6 +155,7 @@
 			children = (
 				C4A8B53B2A97EB0F00B5DDD4 /* Assets.swift */,
 				C423F6442A9A8B6D0058E0C2 /* BitMaskCategory.swift */,
+				C41E24352AAE4C8200671831 /* GameSettings.swift */,
 				C44811712A9E72A7003F655A /* SceneManager.swift */,
 			);
 			name = Managers;
@@ -168,7 +169,6 @@
 				C448117B2AA118C4003F655A /* BestScene.swift */,
 				C44811792AA116EB003F655A /* OptionsScene.swift */,
 				C44811772AA0024C003F655A /* ParentScene.swift */,
-				C41E24352AAE4C8200671831 /* GameSettings.swift */,
 				C4A8B5392A97EAF600B5DDD4 /* GameScene.swift */,
 				C471617D2AA64975000795EE /* GameOverScene.swift */,
 				C448117E2AA29C8A003F655A /* Assets.xcassets */,
